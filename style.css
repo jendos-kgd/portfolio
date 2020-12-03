@@ -2,10 +2,16 @@ body {
   background-color: #BA2F39;
 }
 .header {
+  display: flex;
+  justify-content: space-between;
 }
 .header p {
-  font-size: 20px;
-  color: #fff;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #5CCCCC;
+}
+#avatar {
+  border-radius: 50px;
 }
 .preview-block {
   display: flex;
