@@ -1,0 +1,10 @@
+
+.preview-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+img {
+  border-radius: 7px;
+  margin: 10px;
+}

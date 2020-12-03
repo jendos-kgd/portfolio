@@ -1,0 +1,431 @@
+/*=======Сброс css=============*/
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, img {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/*==========Main styles=============*/
+@font-face {
+  font-family: 'Larsseit';
+  src: url('fonts/Larsseit.woff2'),
+       url('fonts/Larsseit.woff'),
+       url('fonts/Larsseit.ttf'),
+       url('font/Larsseit.otf'),
+}
+@font-face {
+  font-family: 'Larsseit-Bold';
+  src: url('fonts/Larsseit Bold.woff2'),
+      url('fonts/Larsseit Bold.woff'),
+      url('fonts/Larsseit Bold.ttf'),
+      url('font/Larsseit Bold.otf');
+}
+body {
+  max-width: 1440px;
+  font-family: Larsseit, sans-serif;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: Larsseit-Bold, sans-serif;
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: -0.035em;
+}
+h2 {
+  font-size: 36px;
+  letter-spacing: -0.006em;
+}
+h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: -0.03em;
+  color: #22356F;
+}
+h5 {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: -0.006em;
+  color: #22356F;
+}
+.central_header {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-size: 24px;
+}
+b {
+  font-family: Larsseit-Bold, sans-serif;
+}
+.help_mail {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+}
+.logo {
+  color: #62D0DF;
+  letter-spacing: -0.035em;
+}
+button {
+  font-family: Larsseit, sans-serif;
+  text-transform: uppercase;
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+}
+
+/*==================Header============*/
+header {
+  height: 840px;
+  background: url('img/header_bg_layer_1.png') right no-repeat,
+              url('img/header_bg_layer_2.png') 736px 0px no-repeat,
+              url('img/header_bg_layer_3.png') left no-repeat;
+  padding-left: 179px;
+  padding-top: 25px;
+}
+.upper_line {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  margin-top: 10px;
+  width: 233px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar li {
+  display: inline-block;
+}
+.navbar li a {
+  font-size: 14px;
+  color: #22356F;
+  padding: 0 7px 10px;
+}
+.navbar li a:hover {
+  border-bottom: 1px solid #22356F;
+}
+.mail_btn {
+  margin-right: 150px;
+  background-color: #62D0DF;
+  color: #fff;
+  border-radius: 50px;
+}
+.header_about_container {
+  margin-top: 165px;
+  max-width: 500px;
+}
+.header_about_container h1 {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  color: #22356F;
+}
+.header_about {
+  line-height: 46px;
+  color: #22356F;
+}
+.header_about_container form {
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 16px;
+}
+.btn_fill {
+  background-color: #F9B640;
+  color: #fff;
+}
+.btn_stroke {
+  background-color: #F4F9E2;
+  color: #F9B640;
+  margin-left: 30px;
+}
+
+/*=============Why block============*/
+.why_block {
+  height: 600px;
+  background-color: #62D0DF;
+  background-image: url('img/christopher-campbell.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-left: 180px;
+  padding-top: 150px;
+}
+.why_block h2 {
+  color: #fff;
+}
+.why_block p {
+  line-height: 35px;
+  max-width: 555px;
+  margin-top: 90px;
+  color: #fff;
+}
+.less_size {
+  font-size: 19px;
+}
+
+/*===========About block==========*/
+.about_header {
+  margin-left: 105px;
+  color: #22356F;
+  float: left;
+}
+.about_block p {
+  width: 595px;
+  margin: 155px auto 0 auto;
+  line-height: 34px;
+  color: #22356F;
+}
+.about_block .central_header {
+  color: rgba(34, 53, 111, 0.5);
+  margin-top: 75px;
+}
+.small_boxes_container,
+.big_boxes_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.small_boxes_container {
+  margin-top: 25px;
+  margin-bottom: 120px;
+}
+.small_box {
+  width:25%;
+  min-width: 330px;
+  height: 360px;
+  position: relative;
+}
+.small_white_line {
+  width: 255px;
+  height: 72px;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+
+}
+.small_box img {
+  position: absolute;
+  top: 110px;
+  left: 55px;
+}
+.small_box p,
+.big_box p {
+  color: #fff;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+  margin-top: 0;
+}
+.small_box p {
+  margin-left: 80px;
+  margin-top: 25px;
+  max-width: 230px;
+}
+.light_blue {
+  background-color: #FFE2DE;
+}
+.green {
+  background-color: #C4E769;
+}
+.blue {
+  background-color: #62D0DF;
+}
+.dark_blue {
+  background-color:  #0052C1;
+}
+
+/*=============Services block============*/
+.big_box {
+  width: 33.33%;
+  min-width: 450px;
+  height: 480px;
+  position: relative;
+}
+.big_box img {
+  position: absolute;
+  top: 145px;
+  left: 70px;
+}
+.big_white_line {
+  width: 340px;
+  height: 96px;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+}
+.big_box p {
+  margin-top: 30px;
+  margin-left: 105px;
+}
+.violet {
+  background-color: #22356F;
+}
+.deep_blue {
+  background-color: #0052C1;
+}
+.strawberry {
+  background-image: url('img/strawberry_bg.png');
+}
+.light_gray_blue {
+  background-color: #62D0DF;
+}
+.light_gray {
+  background-color: #DEE1FF;
+}
+.true_blue {
+  background-color: #8F00FF;
+}
+.discriptions_block {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.discription {
+  width: 33.33%;
+  height: 240px;
+  padding: 55px 77px 0 105px;
+}
+.discription p {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  color: rgba(34, 53, 111, 0.5);
+  margin-top: 30px;
+}
+/*===================Also block============*/
+.also_block {
+  height: 800px;
+  padding-top: 105px;
+  padding-left: 590px;
+  background-image: url('img/also_block_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.also_block p {
+  font-family: Larsseit-Bold, sans-serif;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.01em;
+  margin-top: 225px;
+  color: #22356F;
+  max-width: 676px;
+}
+.also_mail {
+  color: #FAB63E;
+  margin-top: 175px;
+}
+
+/*=============Contact block============*/
+.contact_block {
+  height: 800px;
+  padding-top: 105px;
+  padding-left: 180px;
+  background-color: #22356F;
+  background-image: url('img/contact_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  color: #fff;
+}
+.big_text {
+  font-size: 64px;
+  margin-top: 230px;
+}
+.contact_text {
+  max-width: 580px;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.005em;
+  margin-top: 75px;
+}
+.contact_mail {
+  color: #62D0DF;
+  margin-top: 100px;
+}
+
+/*===============Footer=============*/
+.info_block {
+  height: 380px;
+  padding-left: 640px;
+  padding-top: 100px;
+  background-image: url('img/footer_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+}
+
+.some_info {
+  max-width: 210px;
+}
+.some_info p,
+.address p,
+.work_hours p {
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: -0.006em;
+  color: rgba(34, 53, 111, 0.5);
+  margin-top: 40px;
+}
+.address {
+  max-width: 220px;
+  margin-left: 50px;
+}
+.work_hours {
+  margin-left: 50px;
+}
+.copyright_block {
+  height: 80px;
+  padding-left: 180px;
+  padding-top: 35px;
+  background-color: #62D0DF;
+}
+.copyright_block p {
+    color: #fff;
+    font-size: 14px;
+}

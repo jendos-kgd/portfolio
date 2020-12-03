@@ -1,0 +1,366 @@
+/*=======Сброс css=============*/
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, img {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+
+
+/*=========Общие стили===========*/
+
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url('fonts/Gilroy-Bold.eot');
+  src: url('fonts/Gilroy-Bold.ttf');
+  src: url('fonts/Gilroy-Bold.woff');
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url('fonts/Gilroy-Medium.eot');
+  src: url('fonts/Gilroy-Medium.ttf');
+  src: url('fonts/Gilroy-Medium.woff');
+}
+
+body {
+  max-width: 1445px;
+}
+h1, h2, p, a {
+  color: #070707;
+}
+h1 {
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 47px;
+  line-height: 59px;
+}
+h2 {
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+}
+p, a, button {
+  font-family: Gilroy-Medium, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+
+}
+.central_container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+/*========Header=============*/
+header {
+  font-family: Gilroy-Bold, sans-serif;
+}
+.navbar {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar li {
+  display: inline-block;
+}
+.navbar li a {
+  color: #828282;
+  font-size: 18px;
+}
+.navbar li a:hover {
+  color: #070707;
+}
+hr {
+  color: #828282;
+  margin-top: 30px;
+}
+.header_about {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  width: 124px;
+  margin-top: 40px;
+}
+.profession {
+  width: 156px;
+  margin-top: 100px;
+}
+.lang_switch {
+  transform: rotate(270deg);
+  height: 20px;
+  width: auto;
+  margin-right: -25px;
+  margin-top: 100px;
+}
+.lang_switch a {
+  font-family: Gilroy-Bold, sans-serif;
+  display: inline-block;
+}
+.lang_switch a:hover {
+  color: #070707;
+}
+.deactive {
+  color: #828282;
+}
+#ru {
+  border-right: 1px solid #070707;
+  padding-right: 5px;
+}
+#photo {
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+/*==============About==============*/
+.about_block {
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+  padding-top: 120px;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+.about_block p {
+  margin-top: 30px;
+}
+
+/*==============Skiils============*/
+.skills_block {
+  padding-top: 90px;
+  padding-bottom: 110px;
+}
+.skills_block p {
+  margin-top: 70px;
+  text-align: center;
+}
+.my_skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills_item {
+  width: 167px;
+  height: 207px;
+  margin-top: 80px;
+  position: relative;
+}
+.skills_item img {
+  display: block;
+  margin: 0 auto;
+}
+.skills_item p {
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  margin-top: 20px;
+  text-align: center;
+}
+.rate {
+  position: absolute;
+  bottom: 0;
+}
+.rate img {
+  display: inline-block;
+  margin-right: 9px;
+}
+.rate img:last-child {
+  margin-right: 0;
+}
+
+/*========Portfolio============*/
+.portfolio_block {
+  background-color: #F6F6F6;
+  padding-top: 110px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+.portfolio_block h2 {
+  margin-bottom: 50px;
+}
+.portfolio_block img {
+  margin: 0 auto 45px;
+  width: 100%;
+  max-width: 940px;
+}
+.portfolio_block a {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 100px;
+}
+/*===========Footer===========*/
+footer  {
+  padding-top: 115px;
+  padding-bottom: 120px;
+}
+footer p {
+  text-align: center;
+  margin-top: 20px;
+}
+footer button {
+  width: 180px;
+  height: 40px;
+  display: block;
+  margin: 30px auto 80px;
+  background-color: #070707;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+.social_links {
+  max-width: 350px;
+  margin: 80px auto 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.social_item {
+  width: 40px;
+  height: 40px;
+  background-image: url('img/sprite_social.png');
+  display: inline-block;
+}
+.instgram {
+   background-position: -102px;
+}
+.behance {
+  background-position: -201px;
+}
+.dribbble {
+  background-position: -303px;
+}
+
+/*=========Mobile adaptive==========*/
+#dropdown_block {
+  display: none;
+  width: 100%;
+  height: 812px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 65px;
+  padding-left: 25px;
+  background-color: #ffffff;
+}
+.mobile_navbar li {
+  margin-bottom: 70px;
+}
+.mobile_navbar li a {
+  font-size: 34px;
+  color: #828282;
+}
+.mobile_navbar li a:active {
+  color: #090909;
+}
+.mobile_lang_switch {
+  position: absolute;
+  right: 5px;
+  bottom: 100px;
+  width: auto;
+  transform: rotate(90deg);
+}
+.mobile_lang_switch a {
+  font-size: 34px;
+}
+#close_dropdown_btn {
+  position: absolute;
+  top: 65px;
+  right: 25px;
+}
+
+@media (min-width: 376px) {
+  #dropdown_btn {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    padding: 65px 25px 90px 25px;
+  }
+  .nav {
+    display: none;
+  }
+  .header_about {
+    display: block;
+    width: 50%;
+  }
+  .name {margin-top: 0;}
+  .profession {margin-top: 25px;}
+  #dropdown_btn {
+    width: 33px;
+    height: 20px;
+    float: right;
+    margin-top: 10px;
+  }
+  .desktop_lang_switch {
+    display: none;
+  }
+  .about_block {
+    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .skills_block {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .skills_item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .portfolio_block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  footer {
+    padding-top: 80px;
+    padding-bottom: 0px;
+  }
+  footer button {
+    width: 100%;
+  }
+}

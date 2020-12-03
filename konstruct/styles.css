@@ -1,0 +1,520 @@
+/*=============Сброс CSS==============*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=======Общие стили=============*/
+@font-face {
+  font-family: BebasNeue;
+  src: url('fonts/BebasNeue-Bold.ttf');
+}
+@font-face {
+  font-family: OpenSans;
+  src: url('fonts/OpenSans-Bold.ttf');
+  src: url('fonts/OpenSans-Regular.ttf');
+  src: url('fonts/OpenSans-SemiBold.ttf');
+}
+
+body {
+	font-family: OpenSans, sans-serif;
+  max-width: 1440px;
+}
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #48555B;
+}
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #48555B;
+}
+h4 {
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 15px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+strong {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #48555B;
+}
+p {
+  font-size: 13px;
+  line-height: 23px;
+  color: #48555B;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  color: #00A4E5;
+  width: 50px;
+  size: 2px;
+  margin-top: 10px;
+}
+button {
+  width: 150px;
+  height: 40px;
+  background-color: #00A4E5;
+  color: #ffffff;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+.central_container {
+  max-width: 941px;
+  margin: 0 auto;
+}
+
+/*============Header=============*/
+header {
+  max-width: 1440px;
+  height: 768px;
+  background-image: url('img/header_bg.png');
+}
+#header_logo_white {
+  height: 23px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+header h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 320px;
+}
+header p {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+}
+#header_sign {
+  font-size: 11px;
+  margin-top: 220px;
+}
+.navbar {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+#header_logo_black {
+  height: 18px;
+}
+.header_navigation li  {
+  display: inline-block;
+}
+.header_navigation li:nth-child(2) {
+  margin-left: 48px;
+}
+.header_navigation li:nth-child(3) {
+  margin-left: 42px;
+}
+.header_navigation li:nth-child(4) {
+  margin-left: 39px;
+}
+.header_navigation li:nth-child(5) {
+  margin-left: 30px;
+}
+.header_navigation li a {
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #48555B;
+}
+.header_navigation li a:hover {
+  color: #00A4E5;
+}
+
+/*===============About us===========*/
+.about_block {
+  display: flex;
+  justify-content: space-between;
+}
+#about_h2 {
+  margin-top: 57px;
+  text-align: center;
+}
+.about_block {
+  margin-top: 70px;
+}
+.about_discr {
+  max-width: 405px;
+}
+.about_discr a {
+  text-decoration: none;
+  color: #00A4E5;
+}
+.about_discr p {
+  margin-top: 30px;
+}
+.cards_block img {
+  margin-left: 20px;
+}
+/*=============Services==============*/
+.services_block {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.services_block hr {
+  text-align: left;
+  margin-left: 0;
+}
+.services_block p {
+  margin-left: 155px;
+  max-width: 405px;
+  font-size: 11px;
+  line-height: 19px;
+}
+/*============Work=============*/
+.work_block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.work_card {
+  width: 295px;
+  height: 330px;
+}
+.work_card img {
+  margin-top: 38px;
+  margin-left: 23px;
+}
+.work_card h3 {
+  margin-top: 25px;
+  margin-left: 23px;
+}
+.work_card p {
+  margin-top: 13px;
+  margin-left: 23px;
+}
+/*=============Contact===========*/
+.contact_block {
+  margin-top: 235px;
+  max-width: 1440px;
+  height: 500px;
+  background-image: url('img/contact_bg.jpg');
+}
+.contact_block p {
+  width: 350px;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+.center_button {
+  margin-top: 35px;
+  text-align: center;
+}
+.signup_block {
+  height: 100px;
+  padding-top: 30px;
+  background-color: #171819;
+  display: flex;
+  justify-content: center;
+}
+.signup_block p {
+  color: #ffffff;
+  font-weight: bold;font-size: 22px;
+  line-height: 30px;
+  margin-right: 70px;
+}
+.signup input {
+  box-sizing: border-box;
+  width: 250px;
+  height: 40px;
+  padding-left: 16px;
+  font-size: 14px;
+  float: left;
+}
+.signup button {
+  float: right;
+}
+ /*==============Footer=============*/
+.footer_block {
+	width: 100%;
+	height: 240px;
+	background-color: #141A20;
+}
+.footer_container {
+	height: 240px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.company_block {
+	max-width: 250px;
+}
+.footer_logo {
+	height: 23px;
+}
+.company_block p {
+	color: #ffffff;
+	font-size: 11px;
+	line-height: 19px;
+	margin-top: 16px;
+}
+.links_block {
+	height: 240px;
+}
+.links_block a {
+	font-size: 11px;
+	line-height: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.links_block_1,
+.links_block_2,
+.links_block_3 {
+	display: inline-block;
+	width: 76px;
+	margin-right: 35px;
+	vertical-align: top;
+}
+.contacts_block p {
+	font-size: 11px;
+	line-height: 16px;
+	font-style: normal;
+	color: #ffffff;
+}
+.social_block {
+	margin-top: 72px;
+	margin-left: 45px;
+}
+.social_block div {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 25px;
+}
+.fb_block {
+	background-image: url('img/sprite_social.png');
+}
+.tw_block {
+	background-image: url('img/sprite_social.png');
+	background-position: center;
+}
+.google_block {
+	background-image: url('img/sprite_social.png');
+	background-position: right;
+}
+.copyright_block {
+	background-color: #171819;
+	height: 60px;
+}
+
+.copyright_block p {
+	font-size: 11px;
+	line-height: 15px;
+	color: #ffffff;
+	padding-top: 22px;
+	text-align: center;
+}
+
+/*=========Phone==============*/
+@media (max-width: 415px) {
+	header {
+		width: 100%;
+		height: 225px;
+		background-image: url('img/bg_mobi.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	#header_logo_white {
+		height: 12px;
+		padding-top: 10px;
+	}
+	header h1 {
+		font-size: 10px;
+		margin-top: 100px;
+		padding: 0;
+	}
+	header p {
+		font-size: 8px;
+		margin-top: 10px;
+		line-height: 11px;
+	}
+	#header_sign {
+		font-size: 6px;
+		line-height: 8px;
+		margin-top: 50px;
+	}
+	#header_logo_black {
+		display: none;
+	}
+	.navbar {
+		margin-top: 10px;
+		height: 16px;
+	}
+	.header_navigation li a {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.header_navigation li:nth-child(2) {
+	  margin-left: 27px;
+	}
+	.header_navigation li:nth-child(3) {
+	  margin-left: 25px;
+	}
+	.header_navigation li:nth-child(4) {
+	  margin-left: 32px;
+	}
+	.header_navigation li:nth-child(5) {
+	  margin-left: 27px;
+	}
+	h2 {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	#about_h2 {
+			margin-top: 25px;
+	}
+	.about_block {
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: 30px;
+	}
+	strong {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.about_discr p {
+		font-size: 12px;
+		line-height: 23px;
+		margin-top: 10px;
+	}
+	.cards_block {
+		display: flex;
+		justify-content: space-between;
+	}
+	.cards_block img {
+		width: 100px;
+		height: 160px;
+		margin: 0;
+	}
+	.services_block {
+		display: block;
+		margin-top: 30px;
+		padding: 0 10px;
+	}
+	.services_block p {
+		font-size: 11px;
+		line-height: 19px;
+		margin: 15px 0 30px 0;
+	}
+	.services_block button {
+		display: block;
+		margin: 0 auto;
+	}
+	.work_block {
+		display: block;
+		margin-top: 0;
+		padding: 10px;
+	}
+	.work_card {
+		margin-top: 35px;
+	}
+	.contact_block {
+		background-image: url('img/contact_bg_mobi.png');
+		height: 184px;
+		margin-top: 65px;
+	}
+	.contact_block p {
+		font-size: 15px;
+		margin-top: 0;
+	}
+	.contact_bloc button {
+		margin-top: 20px;
+	}
+	.signup_block {
+		height: 80px;
+	}
+	.signup_block p {
+		display: none;
+	}
+	.signup input {
+		width: 214px;
+	}
+	.footer_block {
+		height: 680px;
+		padding: 0 10px;
+	}
+	.footer_container {
+		display: block;
+	}
+	.footer_container h4 {
+		margin-top: 0;
+	}
+	.company_block {
+		padding-top: 40px;
+	}
+	.links_block {
+		margin-top: 40px;
+		height: 150px;
+	}
+	.contacts_block {
+		margin-top: 40px;
+	}
+	.social_block {
+		margin: 40px 0 0 0;
+	}
+}
