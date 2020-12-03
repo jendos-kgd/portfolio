@@ -1,4 +1,12 @@
-
+body {
+  background-color: #BA2F39;
+}
+.header {
+}
+.header p {
+  font-size: 20px;
+  color: #fff;
+}
 .preview-block {
   display: flex;
   flex-wrap: wrap;
